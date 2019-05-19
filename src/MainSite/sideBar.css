@@ -1,0 +1,17 @@
+.root-sidebar{
+    position:absolute;
+    left:0; top:94px; bottom: 0;
+    width: 200px;
+    background: #282c34;
+    border-right: 3px solid darkcyan;
+}
+
+.sidebar-element{
+    color: orange;
+    border-bottom: 1px solid darkcyan;
+    margin: 10px;
+}
+
+.sidebar-element :hover{
+    color: white;
+}
