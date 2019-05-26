@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import SidebarElement from './SidebarElement';
-import './sideBar.css';
+import SidebarElementUsers from './SidebarElementUsers';
+import './main-site.css';
 
 class Sidebar extends Component{
     constructor(props){
@@ -10,10 +10,13 @@ class Sidebar extends Component{
 
     render(){
         return(
-            <aside className="root-sidebar">
-                <SidebarElement name="Statistics"/>
-                <SidebarElement name="Info" />
-            </aside>
+            <nav className="root-sidebar">
+                <ul className="list">
+                    <li>
+                        <SidebarElementUsers name="Users"/>
+                    </li>
+                </ul>
+            </nav>
         )
     }
 }

@@ -1,0 +1,157 @@
+.root-header{
+    position:absolute;
+    left:0; right:0; top: 0;
+    height: 80px;
+    border-bottom: 1px solid gray;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    background: #282828;
+}
+
+.header-text{
+    position: absolute;
+    left: 35%;
+    right: 35%;
+    color: white;
+    font-size: 200%;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.root-sidebar{
+    position:absolute;
+    left:0; top:81px; bottom: 0;
+    width: 200px;
+    background: #282828;
+    border-right: 1px solid gray;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.sidebar-element-users{
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    width: 80%;
+    height: 60px;
+    background: gray;
+    color: white;
+    text-align: center;
+    line-height: 15px;
+    border: 1px solid gray;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.sidebar-element-activity{
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 80px;
+    left: 20px;
+    width: 80%;
+    height: 60px;
+    background: gray;
+    color: white;
+    text-align: center;
+    line-height: 15px;
+    border: 1px solid gray;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.sidebar-element-settings{
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 150px;
+    left: 20px;
+    width: 80%;
+    height: 60px;
+    background: gray;
+    color: white;
+    text-align: center;
+    line-height: 15px; 
+    border: 1px solid gray;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.sidebar-element-users :hover{
+    color: blue;
+}
+
+.sidebar-element-activity :hover{
+    color: blue;
+}
+
+.sidebar-element-settings :hover{
+    color: blue;
+}
+
+.list{
+    list-style-type: none;
+}
+
+.users-content{
+    height: 513px;
+    width: 1039px;
+    text-align: left;
+    line-height: 100px;
+    color: black;
+    position: absolute;
+    left: 180px;
+    top: -11px;
+    bottom: 0;
+    right: 0;
+}
+
+.activity-content{
+    height: 513px;
+    width: 1039px;
+    text-align: center;
+    line-height: 100px;
+    color: black;
+    position: absolute;
+    left: 180px;
+    top: -81px;
+    bottom: 0;
+    right: 0; 
+}
+
+.settings-content{
+    height: 513px;
+    width: 1039px;
+    text-align: center;
+    line-height: 100px;
+    color: black;
+    position: absolute;
+    left: 180px;
+    top: -151px;
+    bottom: 0;
+    right: 0; 
+}
+
+.table{
+    border: 1px solid #E8E8E8;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    height: 517px;
+    width: 1040px;
+}
+
+th {
+    line-height: 20px;
+    vertical-align: top;
+    text-align: center;
+    padding: 5px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2
+  }
+
+td {
+    line-height: 20px;
+    text-align: center;
+    padding: 10px;
+    padding: 5px;
+}
+
+li{
+    margin: -50px 0;
+}

@@ -3,7 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "canvasjs": "^1.8.1",
     "react": "^16.8.6",
+    "react-burger-menu": "^2.6.10",
+    "react-charts": "^2.0.0-alpha.12",
     "react-cookie": "^4.0.0",
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.0.0",

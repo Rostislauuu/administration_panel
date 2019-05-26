@@ -15,15 +15,12 @@ const cookie = new Cookies();
 class LoginForm extends Component{
     constructor(props){
         super(props);
-        this.state = {
-            redirect: false,
-            cookieXS: {},
-        }
     };
     
     // Sending data to server
     // Getting response from server
     // Setting cookie based on response
+
     handleSubmit = (event) => {
         event.preventDefault();
         const form = event.target;
@@ -37,17 +34,13 @@ class LoginForm extends Component{
             .then(backData => cookie.set('myCookie', 
                                          backData.token,
                                          {path: '/' , expires: new Date(backData.exp)}
-                                         ), this.setState({cookieXS: cookie.getAll()}));
+                                         ));
             
-            this.setState({redirect: true});
-
-            console.log(cookie.getAll(), this.state);
-            
-            // if(cookie.get('myCookie')) {
-            //     return <Redirect to="/content" />
-            // }else{
-            //     console.log('Not redirecting', cookie.get('myCookie'))
-            // }       
+            if(cookie.get('myCookie')) {
+                return <Redirect to="/content" />
+            }else{
+                console.log('You have no access');
+            }       
 
     }
 
@@ -56,7 +49,7 @@ class LoginForm extends Component{
             <div className="root-box">
                 <Header />
                 <form onSubmit={this.handleSubmit} className="login-box" >
-                <LoginComponent id="email" type="email" name="email" placeholder="Login" />
+                <LoginComponent id="email" type="email" name="email" placeholder="Email" />
                 <LoginComponent id="password" type="password" name="password" placeholder="Password" / > 
                 <SubmitButton />
                 </form>

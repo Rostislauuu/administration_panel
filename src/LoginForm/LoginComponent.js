@@ -7,6 +7,8 @@ class LoginComponent extends Component{
         super(props);
     };
 
+    // previous variant to make
+
     // loginSubmit = (event) =>{
     //     event.preventDefault();
     //     console.log('login is submitted', this.state.login);
