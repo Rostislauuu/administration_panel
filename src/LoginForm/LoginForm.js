@@ -31,9 +31,9 @@ class LoginForm extends Component{
             body: data
             })
             .then(response => response.json())
-            .then(backData => cookie.set('myCookie', 
-                                         backData.token,
-                                         {path: '/' , expires: new Date(backData.exp)}
+            .then(result => cookie.set('myCookie', 
+                                         result.token,
+                                         {path: '/' , expires: new Date(result.exp)}
                                          ));
             
             if(cookie.get('myCookie')) {

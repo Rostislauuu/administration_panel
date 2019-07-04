@@ -40,6 +40,7 @@ class MainSite extends Component{
     }
 
     usersContent = () => {
+        
         const usersData = this.state.data;
 
         if(this.state.isUsersOpen){
@@ -47,6 +48,7 @@ class MainSite extends Component{
                 <div className="users-content"> 
                     <table className="table">
                         <tbody>
+                            
                             <tr>
                                 <th>Firstname</th>
                                 <th>Lastname</th>
@@ -73,15 +75,11 @@ class MainSite extends Component{
         const data = [
             {
               label: "Series 1",
-              data: [{ x: 1, y: 30 }, { x: 2, y: 30 }, { x: 4, y: 40 }]
-            },
-            {
-              label: "Series 2",
-              data: [{ x: 1, y: 20 }, { x: 2, y: 30 }, { x: 3, y: 40 }]
-            },
-            {
-              label: "Series 3",
-              data: [{ x: 1, y: 40 }, { x: 2, y: 10 }, { x: 3, y: 10 }]
+              data: [
+                        { x: 1, y: 5 }, { x: 2, y: 7 }, { x: 3, y: 3 },
+                        { x: 4, y: 9 }, { x: 5, y: 2 }, { x: 6, y: 5 }, 
+                        { x: 7, y: 3 }
+                    ]
             }
           ];
 
@@ -92,18 +90,31 @@ class MainSite extends Component{
                         axes={[
                         { primary: true, type: "linear", position: "bottom" },
                         { type: "linear", position: "left" }
-                        ]}
+                    ]}
                 />
                 </div>
             )
         }
 
     }
-
+    
     settingsContent = () => {
+        const settingsData = this.state.data;
+
         if(this.state.isSettingsOpen){
             return(
-                <div className="settings-content">Hello</div>
+                <form className="settings-content">
+                    Request Settings 
+                    <br></br>
+
+                    <input type="text" value={settingsData.settings.map(item => item.value)} 
+                    className="settings-content-input">
+
+                    </input>
+                    <br></br>
+
+                    <input type="submit" value="Update" className="settings-content-button"></input>
+                </form>
             )
         }
     }
